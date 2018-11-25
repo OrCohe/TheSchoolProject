@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgb(212, 212, 212);
+    background-color: burlywood;
 }
 
 .container {
@@ -12,6 +12,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .line {
@@ -20,12 +21,25 @@ body {
 }
 
 .top {
-    flex: 1;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    border: 2px solid black;
     position: relative;
-    width: 100%;
+    width: 97%;
+    height: 8%;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 10px 10px rgb(182, 155, 120);
+}
+
+.prop {
     text-align: right;
-    padding-left: 30px; 
-    border-bottom: 2px solid black;
+    flex: 1;
+}
+
+.top > header {
+    padding: 10px;
+    display: flex;
 }
 
 .main {
@@ -35,47 +49,200 @@ body {
     width: 100%;
 }
 .left {
+    border-radius: 10px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    box-shadow: 10px 10px rgb(182, 155, 120);
+    width: 250px;
     position: relative;
-    flex: 1;
-    margin: 3%;
+
+    margin: 30px;
 }
 .mid {
+    border-radius: 10px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    box-shadow: 10px 10px rgb(182, 155, 120);
+    width: 250px;
     position: relative;
-    flex: 1;
-    margin: 3%;
+
+    margin: 30px;
 }
 .right {
+    background-color: antiquewhite;
     position: relative;
-    flex: 3;
-    margin: 3%;
-    border: 5px solid black;
-    padding: 1%;
-    
+    flex: 1;
+    margin: 30px;
+    border: 2px solid black;
+    padding: 10px;
+    box-shadow: 10px 10px rgb(182, 155, 120);
+    border-radius: 25px;
+    overflow: auto;
 }
 .word {
     position: relative;
-    float: left;
+    text-align: left;
     left: 5%;
     font-size: 30px;
+    display: inline-block;
 }
 .plus {
     position: relative;
-    text-align: right;
+    float: right;
     right: 2%;
-    font-size: 40px;
+    font-size: 35px;
+    color: black;
 }
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+}
+a:hover {
+    color: rgb(192, 170, 109);
+}
+
+#linkE {
+    border: 2px solid black;
+    float: right;
+    font-size: 25px;
+}
+
+#linkT:hover { 
+    color: red;
+}
+
+#linkT {
+    text-decoration: underline;
+}
+
 .crs {
     position: relative;
     width: 100%;
-    height: 100%;
-    display: flex;
+    height: 95%;
     overflow-y: auto;
     overflow-x: hidden;
     flex-direction: column;
 }
 .crs > div {
     position: relative;
-    flex: 1;
-    padding-top: 20px;
-    left: 5%;
+    width: 100%;
+    padding: 20px;
+    height: 70px;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
+img {
+    border-radius: 25px;
+}
+
+.right > header {
+    border-bottom: 2px solid black;
+    font-size: 30px;
+}
+
+.mainCont {
+    display: flex;
+}
+
+.mainImage {
+    flex: 1;
+}
+
+.mainRest {
+    flex: 5;
+}
+
+.mainUsers {
+    margin-top: 10px;
+    height: 30px;
+}
+
+#addF {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+#addF > div {
+    flex: 1;
+    display: flex;
+}
+
+#addF > div > div {
+    flex: 1;
+}
+
+#addB {
+    margin: 50px;
+    color: green;
+}
+
+#delB {
+    float: right;
+    background-color: red;
+}
+
+#saveB {
+    background-color: green;
+}
+
+#logForm {
+    position: relative;
+    margin: 0 auto; 
+    width:250px;
+    top: 300px;
+}
+
+#logTop {
+    margin: 0 auto; 
+    width:400px;  
+}
+
+#topProp {
+    float: right;
+}
+
+form > span {
+    color: red;
+}
+
+::-webkit-scrollbar {
+    width: 10px;    
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+input {
+    background: white;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+textarea {
+    resize: none;
+ }
+
+
